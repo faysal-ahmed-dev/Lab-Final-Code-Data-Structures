@@ -1,0 +1,130 @@
+{
+  "Clean C Main": {
+    "prefix": "cmain",
+    "body": [
+      "#include <stdio.h>",
+      "int main(){",
+      "   $0",
+      "",
+      "",
+      "    return 0;",
+      "}"
+    ],
+    "description": "Clean C main function (exam style)"
+  },
+
+  "Printf": {
+    "prefix": "cprint",
+    "body": [
+      "printf(\"$0\");"
+    ],
+    "description": "printf statement"
+  },
+
+  "Scanf": {
+    "prefix": "cscan",
+    "body": [
+      "scanf(\"%d\", &$0);"
+    ],
+    "description": "scanf statement"
+  },
+
+  "If Statement": {
+    "prefix": "ifc",
+    "body": [
+      "if($0){",
+      "",
+      "}"
+    ],
+    "description": "if statement"
+  },
+
+  "If Else Statement": {
+    "prefix": "ifelsec",
+    "body": [
+      "if($0){",
+      "",
+      "}",
+      "else{",
+      "",
+      "}"
+    ],
+    "description": "if else statement"
+  },
+
+  "For Loop": {
+    "prefix": "forc",
+    "body": [
+      "for(int i = 0; i < $0; i++){",
+      "",
+      "}"
+    ],
+    "description": "for loop"
+  },
+
+  "While Loop": {
+    "prefix": "whilec",
+    "body": [
+      "while($0){",
+      "",
+      "}"
+    ],
+    "description": "while loop"
+  },
+
+  "Do While Loop": {
+    "prefix": "dowhilec",
+    "body": [
+      "do{",
+      "",
+      "}while($0);"
+    ],
+    "description": "do while loop"
+  },
+
+  "Switch Case": {
+    "prefix": "switchc",
+    "body": [
+      "switch($0){",
+      "    case 1:",
+      "",
+      "        break;",
+      "",
+      "    default:",
+      "",
+      "        break;",
+      "}"
+    ],
+    "description": "switch case structure"
+  },
+
+  "Array Declaration": {
+    "prefix": "arrayc",
+    "body": [
+      "int arr[$0];"
+    ],
+    "description": "array declaration"
+  },
+
+  "Function Template": {
+    "prefix": "func",
+    "body": [
+      "int $0(){",
+      "",
+      "}"
+    ],
+    "description": "function template"
+  },
+
+  "Comment Block": {
+    "prefix": "commentc",
+    "body": [
+      "/*",
+      "Author : ",
+      "Program: ",
+      "Date   : ",
+      "*/"
+    ],
+    "description": "comment block for lab/exam"
+  }
+}
