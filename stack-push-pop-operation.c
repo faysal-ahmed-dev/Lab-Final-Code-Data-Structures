@@ -12,7 +12,9 @@
 
         item = stk[top];
         top = top - 1;
-        printf("\nSTACK\n");
+
+        printf("\nPopped item = %d", item);
+        printf("\nSTACK: \n");
 
         for(i = top; i>=0; i--){
         printf("\nstack[%d]= %d", i, stk[i]);
@@ -22,7 +24,7 @@
     }
 
     int push(){
-        if(top == mx){
+        if(top == mx-1){
             printf("\nStack is full/overflow");
             return 0;
         }
